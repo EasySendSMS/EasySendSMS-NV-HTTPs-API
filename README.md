@@ -1,11 +1,11 @@
 
 # Number Validation (NV) HTTP(s) API (Get, Post Method)
 
-This page provides a reference for all features available via the HTTP interface for number validation queries.
+This page provides a reference for all features available via the HTTP interface for [number validation](https://easysendsms.com/number-validation) queries.
 
 ## Overview
 
-The NV HTTP-API allows you to integrate your system with the Number Validation service using the HTTP protocol to request network information. HTTPS is also supported for secure transactions using SSL encryption.
+The NV HTTP-API allows you to integrate your system with the [Number Validation service](https://easysendsms.com/number-validation) using the HTTP protocol to request network information. HTTPS is also supported for secure transactions using SSL encryption.
 
 The client issues either a GET or POST request to the NV HTTP API, supplying a list of required parameters. Our system returns an HTTP response in JSON format, indicating the status of the number, including the country, MCC, MNC, and operator information.
 
@@ -17,7 +17,7 @@ This service:
 
 Unlike the HLR Lookup, the Number Validation service is offline and does not provide live data.
 
-Our Number Validation tool allows users to perform bulk checks of up to 30 numbers at once by separating them with commas. This feature is ideal for businesses and individuals who need to verify multiple phone numbers quickly. By integrating our NV API, you can seamlessly incorporate this functionality into your application, ensuring accurate and up-to-date information on number status.
+Our [Number Validation tool](https://easysendsms.com/number-validation) allows users to perform bulk checks of up to 30 numbers at once by separating them with commas. This feature is ideal for businesses and individuals who need to verify multiple phone numbers quickly. By integrating our NV API, you can seamlessly incorporate this functionality into your application, ensuring accurate and up-to-date information on number status.
 
 ## Important Notes
 
@@ -188,7 +188,7 @@ var options = new RestClientOptions("")
     MaxTimeout = -1,
 };
 var client = new RestClient(options);
-var request = new RestRequest("https://api.easysendsms.app/nv", Method.Post);
+var request = new RestRequest("[https://api.easysendsms.app/nv](https://easysendsms.com)", Method.Post);
 request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 request.AddParameter("username", "username");
 request.AddParameter("password", "password");
@@ -202,7 +202,7 @@ Console.WriteLine(response.Content);
 ```php
 $curl = curl_init();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://api.easysendsms.app/nv',
+    CURLOPT_URL => '[https://api.easysendsms.app/nv](https://easysendsms.com)',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -224,7 +224,7 @@ echo $response;
 
 ```java
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://api.easysendsms.app/nv")
+HttpResponse<String> response = Unirest.post("[https://api.easysendsms.app/nv](https://easysendsms.com)")
   .header("Content-Type", "application/x-www-form-urlencoded")
   .field("username", "username")
   .field("password", "password")
