@@ -22,7 +22,6 @@ Our [Number Validation tool](https://easysendsms.com/number-validation) allows u
 ## Important Notes
 
 - If you have set a dedicated API Password different from the account password, make sure to use it.
-- If you have set a Whitelisted IP for your API, make sure the request comes from that IP; otherwise, the request will be rejected.
 - Invalid Number: If one or more provided numbers are invalid (less than 9 digits, have invalid characters, etc.), the process will continue for valid numbers, and invalid numbers will be ignored. No balance will be deducted for invalid numbers.
 
 ## API Base URL
